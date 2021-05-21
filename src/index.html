@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lottie</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div class="position-area">
+        <!-- x坐标轴的箭头 -->
+        <div class="x-arrow"></div>
+
+        <!-- y坐标轴的箭头 -->
+        <div class="y-arrow"></div>
+
+        <!-- 网格示例🌰 -->
+        <div class="example"></div>
+
+        <!-- 按规划飞行的飞机✈️ -->
+        <div class="fly">
+            <img style="width: 40px;" src="../src/static/plane.svg" alt="">
+        </div>
+
+        <!-- 航班路线🧵 -->
+        <svg class="test-svg">
+            <marker id="marker" markerWidth="10" markerHeight="10" refX="0" refY="4" orient="auto">
+                <path d="M 0 0 4 4 0 8" style="fill:none;stroke:black;"/>
+            </marker>
+            <path class="path" d="M 80 80 L 160 160 L 240 80 L 320 0 L 400 80" fill="transparent" stroke="rgba(255,0,0,0.5)" />
+            <path id="bei" d="M 80 80 C 160 160 160 160 240 80 S 320 0 400 80" fill="transparent" stroke="rgba(0,0,0,0.5)" stroke-dasharray="5, 5"></path>
+        </svg>
+
+        <!-- 图片3D旋转 -->
+        <div class="img3d">
+            <img class="zhong" src="../src/static/zhong.svg" alt="">
+            <div class="sperate"></div>
+            <img class="fa" src="../src/static/fa.svg" alt="">
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+</html>
